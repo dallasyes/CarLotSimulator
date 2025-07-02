@@ -12,6 +12,11 @@ public class Car
     public string HonkNoise { get; set; }
     public bool IsDriveable { get; set; }
 
+    public Car()
+    {
+        CarLot.numberOfCars++;
+    }
+
     public void MakeEngineNoise(string noise)
     {
         Console.WriteLine($"Engine noise: {noise}");
@@ -21,6 +26,6 @@ public class Car
     {
         Console.WriteLine($"Honk noise: {noise}");
     }
-    
-    
+
+
 }
